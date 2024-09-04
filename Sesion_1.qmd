@@ -33,6 +33,11 @@ A continuacion vamos a insertar un chunk/modulo/celda de codigo
 
 ## Hipotesis nula y alterna by Grecia
 
+Una **hipótesis** es una afirmación no verificada que se propone para ser confirmada o refutada a través de la investigación. Se trata de una conjetura que requiere validación empírica y no puede basarse únicamente en argumentos persuasivos. Las hipótesis pueden servir como propuestas provisionales o predicciones que deben ser evaluadas mediante el método científico
+En estadística la **hipótesis nula** es una afirmación que se establece como punto de partida en un análisis estadístico, sugiriendo que no hay efecto o diferencia en la población. Esta hipótesis se mantiene hasta que los datos muestren evidencia suficiente para rechazarla. Su propósito es actuar como una base para contrastar otras afirmaciones, y su denominación "nula" implica que no hay efecto o cambio esperado mientras que la **hipótesis alterna** es la que se plantea como oposición a la hipótesis nula. Esta sugiere que sí existe un efecto o una diferencia en la población, y se acepta si se rechaza la hipótesis nula basándose en los datos obtenidos. En resumen, mientras que la hipótesis nula postula la ausencia de efecto, la hipótesis alternativa propone lo contrario
+
+Fuente: https://es.wikipedia.org/wiki/M%C3%A9todo_cient%C3%ADfico, https://es.wikipedia.org/wiki/Contraste_de_hip%C3%B3tesis
+
 ## Error tipo 1 y Error tipo 2 by Miguel
 
 ```{r Lecturas de tabla de deficion y ejemplos de tipos de error}
