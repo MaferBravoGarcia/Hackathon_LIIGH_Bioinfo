@@ -1,69 +1,94 @@
 ---
-title: "Sesion 1"
+title: "Sesión 1"  #
 author: "Miguel Pedraza"
-format: html
-editor: visual
+toc: true  # Tabla de contenido activada
+toc-depth: 3  # Profundidad de la tabla de contenido
+toc-expand: true  # Mostrar tabla desplegada al inicio
+toc-location: left  # Ubicación "left" 
+number-sections: true  # Numerar los encabezados
+number-depth: 3  # Profundidad de encabezados que se numerarán
+toc-title: "Contenido"  # Título
+theme: flatly  # Tema
+fontsize: 100%  # Tamaño de la fuente
+# fontcolor: grey  # Mantener comentado si no se usa
+highlight-style: pygments  # Estilo de resaltado para código
+format:
+  html:
+    code-fold: true  # Habilitar plegado de código
+    html-math-method: katex  # Método para renderizar fórmulas matemáticas
+    css: |
+      .justified-text {
+        text-align: justify;
+      }
+  pdf:
+    geometry:
+      - top=30mm
+      - left=30mm
+  docx: default  # Formato por defecto para Word
+editor: visual  # Editor visual activado
 ---
+<p style="text-align: justify;">
 
+</p>
+
+<p style="text-align: justify;">
 En esta sesión vamos a hacer Hackaton para calcular el tamaño del efecto y el poder estadistico.
+</p>
 
-## Caracteres
-
-**Negritas** texto normal
-
-*Italica*
-
-1.  numeracion
-
-2.  numeracion
-
-3.  numeracion
-
--   Guion 1
-
-A continuacion vamos a insertar un chunk/modulo/celda de codigo
-
-```{r Suma}
-12+4
-13-6
-9/3
-```
 
 # Teoria necesaria
 
 ## Hipotesis nula y alterna by Grecia
 
-Una **hipótesis** es una afirmación no verificada que se propone para ser confirmada o refutada a través de la investigación. Se trata de una conjetura que requiere validación empírica y no puede basarse únicamente en argumentos persuasivos. Las hipótesis pueden servir como propuestas provisionales o predicciones que deben ser evaluadas mediante el método científico
-En estadística la **hipótesis nula** es una afirmación que se establece como punto de partida en un análisis estadístico, sugiriendo que no hay efecto o diferencia en la población. Esta hipótesis se mantiene hasta que los datos muestren evidencia suficiente para rechazarla. Su propósito es actuar como una base para contrastar otras afirmaciones, y su denominación "nula" implica que no hay efecto o cambio esperado mientras que la **hipótesis alterna** es la que se plantea como oposición a la hipótesis nula. Esta sugiere que sí existe un efecto o una diferencia en la población, y se acepta si se rechaza la hipótesis nula basándose en los datos obtenidos. En resumen, mientras que la hipótesis nula postula la ausencia de efecto, la hipótesis alternativa propone lo contrario
+<p style="text-align: justify;">
+Una **hipótesis** es una afirmación no verificada que se propone para ser confirmada o refutada a través de la investigación. Se trata de una conjetura que requiere validación empírica y no puede basarse únicamente en argumentos persuasivos. Las hipótesis pueden servir como propuestas provisionales o predicciones que deben ser evaluadas mediante el método científico En estadística la **hipótesis nula** es una afirmación que se establece como punto de partida en un análisis estadístico, sugiriendo que no hay efecto o diferencia en la población. Esta hipótesis se mantiene hasta que los datos muestren evidencia suficiente para rechazarla. Su propósito es actuar como una base para contrastar otras afirmaciones, y su denominación "nula" implica que no hay efecto o cambio esperado mientras que la **hipótesis alterna** es la que se plantea como oposición a la hipótesis nula. Esta sugiere que sí existe un efecto o una diferencia en la población, y se acepta si se rechaza la hipótesis nula basándose en los datos obtenidos. En resumen, mientras que la hipótesis nula postula la ausencia de efecto, la hipótesis alternativa propone lo contrario
+</p>
+
+<p style="text-align: justify;">
+Una **hipótesis** es una afirmación no verificada que se propone para ser confirmada o refutada a través de la investigación. Se trata de una conjetura que requiere validación empírica y no puede basarse únicamente en argumentos persuasivos. Las hipótesis pueden servir como propuestas provisionales o predicciones que deben ser evaluadas mediante el método científico En estadística la **hipótesis nula** es una afirmación que se establece como punto de partida en un análisis estadístico, sugiriendo que no hay efecto o diferencia en la población. Esta hipótesis se mantiene hasta que los datos muestren evidencia suficiente para rechazarla. Su propósito es actuar como una base para contrastar otras afirmaciones, y su denominación "nula" implica que no hay efecto o cambio esperado mientras que la **hipótesis alterna** es la que se plantea como oposición a la hipótesis nula. Esta sugiere que sí existe un efecto o una diferencia en la población, y se acepta si se rechaza la hipótesis nula basándose en los datos obtenidos. En resumen, mientras que la hipótesis nula postula la ausencia de efecto, la hipótesis alternativa propone lo contrario
+</p>
+
+
 
 Fuente: https://es.wikipedia.org/wiki/M%C3%A9todo_cient%C3%ADfico, https://es.wikipedia.org/wiki/Contraste_de_hip%C3%B3tesis
 
 ## Error tipo 1 y Error tipo 2 by Miguel
 
 ```{r Lecturas de tabla de deficion y ejemplos de tipos de error}
-definicion<-read.csv("definicion.csv")
-errores<-read.csv("errores.csv")
+#definicion<-read.csv("definicion.csv")
+#errores<-read.csv("errores.csv")
 ```
 
 ```{r Visualizacion}
-definicion
-errores
+#definicion
+#errores
 
 ```
 
 ## D deh Cohen by Fernanda
 
-# Effect Size
+### Effect Size
 
+<p style="text-align: justify;">
 **Effect size** is the *magnitude of the difference between groups*.
 
 The **absolute effect size** is the difference between the average, or mean, outcomes in two different intervention groups.
+</p>
+
 
 ### Importance of Effect Size
 
+<p style="text-align: justify;">
 **Estimate of the effect size is often needed before starting the research endeavor, in order to calculate the number of subjects likely to be required to avoid a Type II, or β, error, which is the probability of concluding there is no effect when one actually exists.** In other words, you must determine what number of subjects in the study will be sufficient to ensure (to a particular degree of certainty) that the study has acceptable *power* to support the null hypothesis. That is, if no difference is found between the groups, then this is a true finding.
 
 *Absolute effect size* is useful when the variables under study have [intrinsic meaning]{.underline} (eg, number of hours of sleep).
+</p>
+
+
+
+
+
+
 
 Calculated indices of *effect size* are useful when:
 
@@ -77,25 +102,36 @@ Calculated indices of *effect size* are useful when:
 
 ### Why report effect size?
 
+<p style="text-align: justify;">
 The *effect size* is the main finding of a quantitative study. While a *P value* can inform the reader whether an effect exists, the P value will not reveal the size of the effect. In reporting and interpreting studies, both the **substantive significance** (*effect size*) and the **statistical significance** (*P value*) are essential results to be reported.
+</p>
+
+
 
 —
 
 **Annotation: A difference between statistical significance and substantive significance**
 
+<p style="text-align: justify;">
 A measure of *statistical significance* reveals the probability that the value of a statistic could have resulted from chance factors associated with the random manner that observations are gathered for analysis. *Substantive significance* (a.k.a. theoretical, practical, meaningful) refers to the theoretical importance or practicality of the result.
 
 *Statistics with high statistical significance may have varying degrees of substantive significance, and statistics with low (or even no) statistical significance may or may not have low substantive significance.*
+</p>
 
 —
 
 *Example of misinterpretation*:
 
+<p style="text-align: justify;">
 A commonly cited example of this problem is the [Physicians Health Study of aspirin to prevent myocardial infarction (MI).](https://pubmed.ncbi.nlm.nih.gov/21481826/) In more than 22.000 subjects over an average of 5 years, aspirin was associated with a reduction in MI (although not in overall cardiovascular mortality) that was highly statistically significant: *P \< 0.00001.* The study was terminated early due to the conclusive evidence, and aspirin was recommended for general prevention. However, the effect size was very small: a risk difference of 0.77% with *r^2^ = 0.001* - an extremely small effect size -. As a result of that study, many people were advised to take aspirin who would not experience benefit yet were also at risk for adverse effects.
+</p>
+
 
 ### How to calculate effect size?
 
+<p style="text-align: justify;">
 Depending upon the type of comparisons under study, effect size is estimated with [different indices.]{.underline} The indices fall into two main study categories:
+</p>
 
 -   Calculate effect sizes *between groups:* Cohen's d, Odds ratio (OR) and Relative Risk (RR).
 
@@ -105,9 +141,11 @@ Depending upon the type of comparisons under study, effect size is estimated wit
 
 ![](images/clipboard-3362089315.png)
 
+<p style="text-align: justify;">
 *Cohen's term d* is an effect size index, a type of denominator that standardizes the difference by transforming the absolute difference into standard deviation units.
 
 [Effect Size Calculator](https://lbecker.uccs.edu/)
+</p>
 
 **References**
 
@@ -119,7 +157,10 @@ Depending upon the type of comparisons under study, effect size is estimated wit
 
 # Poder estadístico by Hugo
 
+<p style="text-align: justify;">
 Es la capacidad de una prueba para rechazar correctamente la hipótesis nula cuando es falsa.
+
+</p>
 
 ## Factores que influyen en el poder estadístico:
 
@@ -132,3 +173,108 @@ Es la capacidad de una prueba para rechazar correctamente la hipótesis nula cua
 
 1.  Reducción de errores de tipo II: Un poder estadístico alto reduce la probabilidad de cometer un error de tipo II, que ocurre cuando no se rechaza una hipótesis nula falsa.
 2.  Diseño de estudios: Ayuda a determinar el tamaño de muestra necesario para detectar un efecto de un tamaño específico con una probabilidad deseada Referencia: https://es.wikipedia.org/wiki/Poder_estadístico
+
+# Ejemplo de aplicación
+
+El artículo y repositorios se pueden consultar en:
+
+-   <https://www.oasis-brains.org/>
+-   <https://direct.mit.edu/jocn/article/22/12/2677/4983/Open-Access-Series-of-Imaging-Studies-Longitudinal>
+-   <https://www.sciencedirect.com/science/article/pii/S2352914819300917?via%3Dihub>
+-   <https://doi.org/10.1016/j.imu.2019.100200>
+-   <https://data.mendeley.com/datasets/tsy6rbc5d4/1>
+-   <https://www.kaggle.com/datasets/shashwatwork/dementia-prediction-dataset?select=dementia_dataset.csv>
+
+<p align="justify">
+
+La base de datos en cuestión, tiene información clínica, socio-demográfica, datos de rendimiento cognitivo y datos longitudinales de imagen cerebral por resonancia magnética de 150 participantes diestros; con, o sin demencia, con edades entre 60 y 96 años. Las variables contenidas en la base de datos (OASIS-2) son:
+
+</p>
+
+-   **Subject ID** (Número de identificación del sujeto)
+-   **MRI ID** (Número de identificación temporal de la resonancia, recordemos que se trata de un estudio longitudinal con hasta 3 resonancias separadas por un año)
+-   **Group** {Indica si pertenece al grupo con demencia, sin demencia o convertido, estos últimos se habían tratado inicialmente com con demencia, luego se trataron como sin demencia}
+-   **Visit** (Indica el número de vistia para adquirir las imágenes de resonancia magnética)
+-   **MR delay** (Días transcurridos entre cada resonancia)
+-   **Sex** (Indica el sexo del participante, M = masculino, F = femenino)
+-   **Age** (Edad del participante en años cumplidos)
+-   **Social Economic Status** (SES, nivel socio económico con 5 niveles, el más alto es 5)
+-   **Education level** (EDUC, nivel de educación en años cursados en el sistema escolar)
+-   **MMSE** (mini-mental state examination parameters, indica el resultado de la prueba minimental, que sirve para medir el deterioro cognitvo)
+-   **Clinical Dementia Ratio** (CDR) Con base en una entrevista, se evalúan áreas cognitivas y funcionales del paciente, los códigos son:
+    -   0 = sin demencia.
+    -   0.5 = demencia muy leve.
+    -   1 = demencia leve.
+    -   2 = demencia moderada.
+    -   3 = demencia severa.
+-   **Estimated Total Intracranial Volume** (e-TIV) Volumen intercranial total estimado.
+-   **Normalized Whole Brain Volume (n-WBV)** Volumen normalizado del cerebro.
+-   **Atlas Scaling Factor**, convierte “las coordenadas” del cerebro a las “coordenadas” del atlas cerebral que se usará.
+
+## PASO 1: Lectura del conjunto de datos
+
+```{r}
+#| label: Lectura del dataset
+#| echo: false
+#| include: false
+bd.01<-read.csv("oasis_longitudinal_demographics.csv") # Leemos la base de datos
+str(bd.01) # Revisamos la estructura
+```
+
+## PASO 2: Echamos un ojo a las variables
+
+A continuación, hagamos una exploración visual inicial a nuestra base de datos. Este paso es indispensable para identificar errores o corroborar que nuestra base de datos corresponde a lo esperad
+
+```{r}
+#| label: Echamos ojo a los datos
+library(GGally) # Llamado de librerías
+# Graficamos
+ggpairs(data =bd.01[,c(3,11)],
+        aes(color=Group,
+            alpha=0.6),
+        title = "Exploración inicial Demencia dataset")
+```
+
+## PASO 3: Calculamos la d de Cohen
+
+A simple vista parece que sí hay un effecto, vamos a calcular su tamaño
+
+```{r}
+#| label: Calculamos el tamaño del efecto
+library(effsize) # Llamamos librería para calcular tamaño del efecto
+library(dplyr) # Librería para manejo de datos
+
+# Filtramos puntajes minimental por grupo de interés
+
+puntaje.minimental.gpo.demencia <- bd.01%>%
+  select(Group, MMSE) %>%
+  filter(Group=="Demented")
+
+puntaje.minimental.gpo.NOdemencia <- bd.01%>%
+  select(Group, MMSE) %>%
+  filter(Group=="Nondemented")
+
+d.de.coehn<-cohen.d(na.omit(puntaje.minimental.gpo.NOdemencia$MMSE),
+                    na.omit(puntaje.minimental.gpo.demencia$MMSE)
+                    )
+d.de.coehn
+```
+
+Observamos un effecto largo, ahora la pregunta es, ¿cuál es el poder estadístico?
+
+## PASO 4: Calculamos el poder estadístico
+
+```{r}
+#| label: Cálculo del poder estadístico
+library(pwr) # Llamamos librerías
+pwr.t.test(n=146, d=d.de.coehn[["estimate"]], type = "two.sample")
+```
+
+
+## RETO
+
+1. Supongamos que tengo una n de 30 sujetos, ¿de cuánto será mi poder estadístico al aplicar un estudio similar?
+
+
+2. Supongamos que quiero obtener un poder estadístico mínimo de 0.7, y que el tamaño del efecto es de 0.5, ¿De qué tamaño tiene que ser mi n?
+
